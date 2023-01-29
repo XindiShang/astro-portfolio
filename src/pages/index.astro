@@ -1,8 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.svelte';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Component from '../components/Component.svelte'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -12,7 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header client:visible />
+		<Header />
 		<main>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>
